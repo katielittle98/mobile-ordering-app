@@ -138,3 +138,4 @@ modalBtn.addEventListener("click", function(e) {
 modalClose.addEventListener('click', function(){
     modal.style.display = 'none'
 })
+
