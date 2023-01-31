@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile Ordering App</title>
+    <link rel="stylesheet" href="index.css">
+    <!--Font Awesome CDN-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <!--Box icon-->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class="bcg-img">
+        <h1 @fontface>Katie's Food Delivery Service</h1>
+        <h3>Order online or through the app!</h3>
+    </div>
+    <h3 class="menu-name">MENU</h3>
+    <div id="menu" class="menu"></div>
+    <div class="order-total" id="order-total">
+        <h3 class="your-order">Your Order</h3>
+        <div class="order-items" id="order-items"></div>
+        <hr>
+        <div class="total-price" id="total-price">Total Price: </div>
+        <button class="complete-order" id="complete-order">Complete Order</button>
+    </div>
+    
+    <div class="modal" id="modal">
+		<div class="close-modal-btn">
+			<button class="modal-close-btn" id="modal-close-btn" disabled>X</button>
+		</div>
+		<div class="modal-inner" id="modal-inner">
+			<h2>Enter Card Details</h2>
+			<form id="payment" class="payment">
+                <input type="text" name="fullName" placeholder="Enter your full name" required/ aria-label="Full Name">
+                <input type="number" name="card-number" placeholder="Enter your card number" required/ aria-label="Card Number">
+                <input type="number" name="card-cvv" placeholder="Enter CVV" required/ aria-label="CVV">
+                
+				<div class="modal-choice-btns" id="modal-choice-btns">
+					<button type="submit" class="modal-btn" id="modal-btn">Pay Now</button>
+				</div>
+			</form>
+		</div>
+	</div>
+    
+    <script src="index.js" type="module"></script>
+</body>
+</html>
+
+
+

@@ -1,0 +1,167 @@
+body {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+@font-face {
+    src: url("IrishGrover.ttf");
+    font-family: IrishGrover;
+}
+
+.bcg-img {
+    padding-top: 60px;
+    margin: 0 auto;
+    color: white;
+    background-image:  
+        linear-gradient(180deg,
+        rgba(0,0,0,0.6) 0%,
+        rgba(0,0,0,0.8) 100%),url(https://static.vecteezy.com/system/resources/previews/000/086/716/original/cartoon-fast-food-vectors.jpg);
+        background-size: contain;
+    height: 150px;
+    display: block;
+    width: 100%;
+    text-align: center;
+    text-shadow: 2px 3px black;
+    font-family: IrishGrover;
+    
+}
+
+.order-total {
+    margin: auto auto;
+    text-align: center;
+    font-weight: bolder;
+    padding-bottom: 70px;
+    padding-top: 10px;
+}
+
+
+.menu-name {
+    color: #eb2828;
+    font-family: IrishGrover;
+    font-size: 30px;
+    margin: 25px auto;
+    text-align: center;
+}
+
+
+.complete-order, .modal-btn {
+    margin: 30px auto;
+    background-color: green;
+    color: white;
+    border: none;
+    padding: 8px 25px;
+    cursor: pointer;
+}
+
+.row {
+    display: grid;
+    grid-template-columns: 40px 55px 250px 55px 40px;
+    padding: 5px;
+    justify-content: space-around;
+
+}
+
+.add-btn {
+    border: none;
+    background-color: transparent;
+    font-size: 30px;
+    color: gray;
+    justify-content: center;
+
+}
+
+
+.column {
+    display: block;
+    width: fit-content;
+    margin: 0px auto;
+    padding: 0px;
+}
+
+.emoji-pic {
+    width: 40px;
+}
+
+
+hr {
+    height: 1px;
+    background-color: #E5E1E1;
+    border: none;
+  }
+
+
+.items-ordered {
+    margin: auto auto;
+    display: grid;
+    grid-template-columns: 420px 420px;
+    justify-content: center;
+    text-align: left;
+
+}
+
+.item-name {
+    padding-left: -180px;
+}
+
+.remove-btn  {
+    font-weight: lighter !important;
+    font-size: 10px !important;
+    cursor: pointer;
+}
+
+.add {
+    cursor: pointer;
+}
+
+.item-row {
+    display: grid;
+    width: fit-content;
+    margin: 0px auto;
+    grid-template-columns: 220px 100px;
+    text-align: left;
+    padding-left: 50px;
+ 
+}
+
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    height: 280px;
+    width: 350px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 6px 2px #666;
+    background-color: white;
+    color: black;
+}
+
+
+.modal-inner {
+    width: 300px;
+    padding: 20px;
+}
+
+input {
+    margin: auto;
+    width: 200px;
+    padding: 5px;
+}
+
+
+.modal-close-btn {
+    position: absolute;
+    right: 10px;
+    top: 5px;
+}
+
+.modal-display-name {
+    color: red;
+    margin: 50px auto;
+    padding: 20px;
+}
