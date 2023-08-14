@@ -1,0 +1,98 @@
+body {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+@font-face {
+    src: url("IrishGrover.ttf");
+    font-family: IrishGrover;
+}
+
+@media (min-width: 768px) {
+    .txt1 {
+        font-size: 80px;
+    }
+}
+
+.car-img {
+    max-height: 90vh;
+    max-width: 100%;
+    filter: brightness(40%);
+    position: relative;
+}
+
+.carousel-txt {
+    position: absolute;
+    display: block;
+    max-width: 100%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 30% auto;
+    text-shadow: 2px 3px black;
+    font-family: IrishGrover;
+}
+
+@media (min-width: 0) {
+    .d-sm-block {
+       display: block!important;
+    }
+  }
+  
+nav {
+    font-family: 'Roboto', sans-serif;
+    background-repeat: repeat;
+    font-size: 18px;
+    background-color: black;
+    color: white;
+}
+
+.navbar-brand {
+    font-family: IrishGrover;
+    color: white;
+}
+
+.bio {
+    display: block;
+    width: 70%;
+    margin: 0 auto;
+    padding: 1.2rem;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+.bold {
+    font-weight: bolder;
+}
+
+.bio > h1 {
+    font-family: IrishGrover;
+}
+
+.txt2 {
+    text-shadow: 1px 1px black;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5rem;
+}
+
+.order-btn {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-family: 'Roboto', sans-serif;
+    cursor: pointer;
+}
+
+@media (min-width: 320px) and (max-width: 540px) {
+    .bio {
+        padding: .75rem;
+        width: 90%;
+    }
+    .carousel-txt {
+      bottom: -20px;
+    }
+}
+

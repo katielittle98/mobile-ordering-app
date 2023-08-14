@@ -1,0 +1,194 @@
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+@font-face {
+    src: url("IrishGrover.ttf");
+    font-family: IrishGrover;
+}
+
+
+.top {
+    display: flex;
+}
+
+nav {
+    font-family: 'Roboto', sans-serif;
+    background-repeat: repeat;
+    font-size: 18px;
+    background-color: black;
+    color: white;
+}
+
+.navbar-brand {
+    font-family: IrishGrover;
+    color: white;
+}
+
+.column {
+    font-size: 20px;
+}
+
+.order-total {
+    margin: 0 auto;
+    text-align: center;
+    font-weight: bolder;
+    padding-bottom: 70px;
+    padding-top: 10px;
+    padding-right: 10px;
+    border: 1px solid rgb(233, 230, 230);
+}
+
+
+.menu-name {
+    background-color: #eb2828;
+    color: white;
+    display: block;
+    width: 100%;
+    font-family: IrishGrover;
+    font-size: 30px;
+    margin: 0px auto;
+    text-align: center;
+}
+
+
+.complete-order, .modal-btn {
+    margin: 30px auto;
+    background-color: green;
+    color: white;
+    border: none;
+    padding: 8px 25px;
+    cursor: pointer;
+}
+
+.menu-pic {
+    padding: 10px;
+    width: 13rem;
+    height: 11rem;
+}
+
+.row {
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1.5fr));
+    max-width: 100%;
+    margin: 1rem auto;
+    height: 180px;
+    border: 1px solid rgb(210, 207, 207);
+}
+
+
+@media (max-width: 1001px) {
+    .row {
+        grid-template-columns: repeat(auto-fit, minmax(500px, 1.5fr));
+        height: 300px;
+        grid-area: auto;
+    }
+}
+
+
+.add-btn {
+    border: none;
+    background-color: transparent;
+    font-size: 30px;
+    color: gray;
+    justify-content: center;
+
+}
+
+.ingredients, .food-name, .price, .add {
+    font-size: 15px;
+}
+
+
+.items-ordered {
+    margin: auto auto;
+    display: grid;
+    grid-template-columns: 420px 420px;
+    justify-content: center;
+    text-align: left;
+
+}
+
+
+.remove-btn  {
+    font-weight: lighter !important;
+    font-size: 10px !important;
+    cursor: pointer;
+}
+
+.add {
+    cursor: pointer;
+}
+
+.item-row {
+    display: grid;
+    width: fit-content;
+    margin: 0px auto;
+    grid-template-columns: 220px 100px;
+    text-align: left;
+    padding-left: 50px;
+ 
+}
+
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    height: 280px;
+    width: 350px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 6px 2px #666;
+    background-color: white;
+    color: black;
+}
+
+
+.modal-inner {
+    max-width: 300px;
+    display: block;
+    margin: 0 auto;
+}
+
+input {
+    margin: auto;
+    width: 200px;
+    padding: 5px;
+}
+
+
+.modal-close-btn {
+    position: absolute;
+    right: 10px;
+    top: 5px;
+}
+
+.modal-display-name {
+    color: red;
+    margin: 50px auto;
+    padding: 20px;
+}
+
+
+@media (min-width: 320px) and (max-width: 540px) {
+    .row {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1.5fr));
+        justify-content: center;
+        align-items: center;
+    }
+    .menu-pic {
+      width: 14rem;
+    }
+}
